@@ -3,5 +3,7 @@
     "files.associations": {
         "stdio.h": "c",
         "cstdlib": "c"
-    }
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": []
 }
