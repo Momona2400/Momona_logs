@@ -12,5 +12,7 @@ int main() {
         cin>>a2[i];
     }
 
+    //copy elements of 1st set which are not in 2nd set in the 3rd set and then print it 
+
     return 0;
 }
