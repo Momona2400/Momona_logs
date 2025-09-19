@@ -1,6 +1,11 @@
 #include<stdio.h>
 #include<string.h>
 void main() {
+
+    void Push(int arr[], int x) {
+        
+    }
+
     int n, i;
     scanf("%d", &n);
     int a[n];
