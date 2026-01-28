@@ -3,11 +3,11 @@
 using namespace std;
 
 bool isValid(string s1, string s2) {
-    int count1[26], count2[26];
-    if(strlen(s1) != strlen(s2)) {
+    int count1[26] = {0}, count2[26] = {0};
+    if(s1.size() != s2.size()) {
         return false;
     }
-    for(int i = 0; i < strlen(s1); i++) {
+    for(int i = 0; i < s1.size(); i++) {
         if(s1[i] >= 65 && s1[i] <= 90) {
             count1[s1[i] - 65]++;
         }
@@ -20,7 +20,9 @@ bool isValid(string s1, string s2) {
         else {
             count2[s2[i] - 97]++;
         }
-        if(s1[i] != s2[i]) {
+    }
+    for(int i = 0; i < 26; i++) {
+        if(count1[i] != count2[i]) {
             return false;
         }
     }

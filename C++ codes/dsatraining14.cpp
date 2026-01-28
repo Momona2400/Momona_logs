@@ -2,20 +2,35 @@
 #include"LinkedListFunctions.h"
 using namespace std;
 
+//copy of list
+void copy(Node* start, Node*& start2) {
+    start2 = start;
+    Node* ptr = start;
+    Node* ptr2 = start;
+    ptr = ptr->next;
+    while(ptr != nullptr) {
+        ptr2->next = new Node {ptr->data, nullptr};
+        ptr2 = ptr2->next;
+        ptr = ptr->next;
+    }
+}
+
 int main() {
     
-    // Node* first = new Node{1, nullptr};
-    // inend(first, 2);
-    // inend(first, 3);
-    // inend(first, 4);
-    // inend(first, 5);
-    // inend(first, 6);
-    // inend(first, 7);
-    // inend(first, 8);
-    // inend(first, 9);
+    Node* sixth = new Node{6, nullptr};
+    Node* fifth = new Node{5, sixth};
+    Node* fourth = new Node{4, fifth};
+    Node* third = new Node{3, fourth};
+    Node* second = new Node{2, third};
+    Node* first = new Node{1, second};
 
-    Node* first = nullptr;
-    search(first, 10);
+    Node* first2;
+
+    display(first);
+    cout<<endl;
+    copy(first, first2);
+    display(first2);
+
 
     return 0;
 }
