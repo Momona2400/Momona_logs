@@ -1,3 +1,4 @@
-public class {
+public class EvenOdd {
+
     
 }
