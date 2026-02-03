@@ -1,4 +1,4 @@
-//Adjency list of non directed graph
+//Adjency list of directed graph
 
 #include<iostream>
 #include<vector>
@@ -16,7 +16,6 @@ int main() {
         int a, b;
         cin>>a>>b;
         adj[a].push_back(b);
-        adj[b].push_back(a);
     }
     for(int i = 0; i < v; i++) {
         cout<<i<<": ";
