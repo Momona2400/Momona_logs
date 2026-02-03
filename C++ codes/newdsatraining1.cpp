@@ -5,7 +5,9 @@ using namespace std;
 int main() {
     
     int v, e;
+    cout<<"Enter the number of vertices: ";
     cin>>v;
+    cout<<"Enter the number of edges: ";
     cin>>e;
     int i;
     vector<int> adj[v];
