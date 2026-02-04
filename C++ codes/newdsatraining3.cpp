@@ -18,6 +18,7 @@ int main() {
         int a, b;
         cin>>a>>b;
         adj[a].push_back(b);
+        adj[b].push_back(a);
     }
     for(int i = 0; i < v; i++) {
         cout<<i<<": ";
@@ -40,6 +41,7 @@ int main() {
                 status[y] = 1;
             }
         }
+        cout<<x<<" -> ";
         q.pop();
     }
 
