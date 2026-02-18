@@ -1,1 +1,1 @@
-/* code */
+    return 0;
